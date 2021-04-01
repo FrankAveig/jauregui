@@ -89,7 +89,7 @@ body{
   margin: auto;
 }
 .containerHeader1{
-  background-color: #0095e5;
+  background-color: #1f9aab;
 }
 .containerHeader1 h3{
   color: white;
@@ -101,7 +101,7 @@ body{
   text-decoration: none;
 }
 .containerHeader1 i{
-  color: #74b9ed;
+  color: #a5dff4;
   font-size: 1.8rem;
   margin-right: 2rem;
 }
@@ -155,12 +155,12 @@ header .containerHeader2 .horarios div h3:nth-child(1){
   font-size: 2rem;
   margin-bottom: 0;
 }
-header .containerHeader2 .horarios div h3:nth-child(2){
+header .containerHeader2 .horarios div h3:nth-child(2), h3:nth-child(3){
   font-size: 2rem;
   color: #949494;
   font-weight: 400;
   font-style: italic;
-  margin-top: 0;
+  margin: 0;
 }
 header .containerHeader2 .horarios h3{
   margin-right: 2rem;
@@ -169,10 +169,7 @@ header .containerHeader2 .horarios h3{
 header .containerHeader2 figure{
   margin: 0.9rem 0;
 }
-header .containerHeader2 figure img{
-  height: 8.7rem;
-  width: 30.7rem;
-}
+
 hr{
   border: 1px solid #e3e4e4 ;
   margin: 0;
@@ -198,7 +195,7 @@ header .navegacion .menu ul li{
 }
 header .navegacion .menu ul a{
   text-decoration: none;
-  color: #0095e5;
+  color: #1f9aab;
 }
 header .navegacion .menu ul a:hover{
   color:#616262;
@@ -214,20 +211,19 @@ header .navegacion .menu ul a:hover{
 
 .hero ul li img{
   width: 100%;
-  position: relative;
-  top: -246px;
+
 }
 main .bienvenida{
+  margin-top: 8rem 0;
   display: grid;
   grid-template-columns: 55rem 60rem;
   justify-content: center;
-  align-items: center;
   gap: 9rem;
   margin: 5rem 0;
   color: #616262;
 }
 main .bienvenida figure{
-  margin: 0;
+  margin-top: 2.3rem;
   width: 55rem;
   height: 55rem;
 }
@@ -235,26 +231,28 @@ main .bienvenida figure img{
   width: 100%;
 }
 main .bienvenida .texto_bienvenida h2{
-font-size: 5rem;
-color: #0095e5;
+font-size: 4.9rem;
+color: #1f9aab;
 margin: 1rem 0;
 }
 main .bienvenida .texto_bienvenida h3{
   font-size: 3rem;
-  color: #0095e5;
+  color: #1f9aab;
   margin: 1rem 0;
 }
 main .bienvenida .texto_bienvenida p{
   font-size: 2rem;
 }
 main .ventajas{
-  background-color: #0095e5;
+  background-color: #1f9aab;
+  margin-bottom: 3.5rem;
 }
 main .ventajas h2{
+  margin-bottom: -3px;
   font-size: 5rem;
   color: white;
   text-align: center;
-  padding: 4rem ;
+  padding: 3.5rem ;
 }
 main .ventajas .facil_reserva{
   display: grid;
@@ -298,14 +296,14 @@ main .servicios .contenedor_servicios .servicio figure img{
 }
 main .servicios h2{
   font-size: 5rem;
-  color: #0095e5;
+  color: #1f9aab;
 }
 main .servicios h3{
-  color: #0095e5;
+  color: #1f9aab;
   font-size: 3rem;
 }
 main .pre_footer{
-  background-color: #0095e5;
+  background-color: #1f9aab;
 }
 main .pre_footer .contenedor_pre_footer{
   max-width: 1200px;
@@ -317,7 +315,8 @@ main .pre_footer .contenedor_pre_footer{
 main .text_pre_footer h3{
   font-size: 5rem;
   color: white; 
-  padding: 4rem 0 0 0 0;
+  padding: 0rem 0 0 0 0;
+  margin-bottom: 7px;
 }
 main .text_pre_footer h4{
   font-size: 3rem;
@@ -325,6 +324,7 @@ main .text_pre_footer h4{
   color: white;
   font-weight: 400;
   margin: 4rem 0;
+  margin-top: 0rem;
 }
 
 main .contenedor_pre_footer button{
@@ -354,21 +354,45 @@ footer .container_footer{
 footer h3{
   color: white;
   font-size: 2rem;
+  
 }
 footer h4{
   color: white;
   font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
 }
-footer p,h5{
+footer h5{
+  margin-top: 2rem;
+}
+
+footer .contacto_footer h5{
+margin-top: 0;
+margin-bottom: 1px;
+}
+
+footer h6{
+  color: #949494;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+body > footer > div > div.contacto_footer > h4{
+  margin-bottom: 1.3rem;
+}
+footer p,h5,li{
   color: #949494;
   font-size: 2rem;
 }
-footer h5{
-  font-style: italic;
+footer p{
+  margin-top: -1rem;
 }
+
 footer ul{
   padding: 0;
   list-style: none;
   font-size: 2rem;
+}
+footer .contacto_footer h4{
+  margin-bottom: 7px!important;
 }
 
