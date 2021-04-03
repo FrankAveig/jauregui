@@ -6,8 +6,8 @@
   <meta name="robots" content="index,follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/estilos.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">  <title>Jauregui</title>
+  <link rel="stylesheet" href="./css/header_footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">  <title>Dental Jáuregui</title>
   <link rel="icon" type="image/png" href="./imagenes/favicon.png">
 </head>
 <body>
@@ -16,7 +16,7 @@
     <nav class="menu">
       <ul>
         <li><a href="./index.html">Inicio</a> </li> 
-        <li><a href="./videos.html">Nosotros</a> </li> 
+        <li><a href="./nosotros.html">Nosotros</a> </li> 
         <li><a href="#servicios">Servicios</a> </li> 
         <li><a href="./personal.html">Personal</a></li>
         <li><a href="./contactanos.html">Contáctanos</a></li>
@@ -41,7 +41,7 @@
   </section>
   <section class="containerHeader2">
     <figure>
-      <img src="./imagenes/logo.png" alt="Logotipo">
+      <img src="./imagenes/logo.gif" alt="Logotipo">
     </figure>
     <div class="horarios">
       <div>
@@ -62,7 +62,7 @@
     <nav class="menu">
       <ul>
         <li><a href="./index.html">Inicio</a> </li> 
-        <li><a href="./videos.html">Nosotros</a> </li> 
+        <li><a href="./nosotros.html">Nosotros</a> </li> 
         <li><a href="#servicios">Servicios</a> </li> 
         <li><a href="./personal.html">Personal</a></li>
         <li><a href="./contactanos.html">Contáctanos</a></li>
@@ -83,7 +83,7 @@
       <img src="./imagenes/welcome.png" alt="">
     </figure>
     <div class="texto_bienvenida">
-      <h2>Bienvenidos a Dental Jauregui</h2>
+      <h2>Bienvenidos a Dental Jáuregui</h2>
       <h3>Clinica dental</h3>
       <p>
         Nos complace que entregue sus inquietudes sobre la salud dental en nuestras manos expertas. 
@@ -105,7 +105,7 @@
     </div>
   </section>
   <section class="ventajas" >
-    <h2>¿Por qué elegir la clínica Jauregui?</h2>
+    <h2>¿Por qué elegir la clínica Jáuregui?</h2>
     <div class="facil_reserva">
       <div>
         <i class="icofont-address-book"></i>
@@ -179,7 +179,7 @@
 
     <div>
       <h3>Jauragui</h3>
-      <p>La clínica dental Dental Jauregui está aquí para solucionar cualquier problema de salud dental que pueda tener.
+      <p>Dental Jáuregui está aquí para solucionar cualquier problema de salud dental que pueda tener.
         Nuestro diverso equipo de profesionales y nuestro enfoque orientado al servicio al cliente harán que, por una vez,
         se sienta cómodo mientras está sentado en la silla de un dentista.</p>
       </div>
@@ -210,18 +210,6 @@
       </div>
     </div>
     </footer>
-  
+  <script src="./js/menu_hamburgesa.js"></script>
   </body>
-  <script>
-    const menu = document.querySelector('.menu');
-    const burgerButton = document.querySelector('.burger-button');
-    burgerButton.addEventListener('click',hideShow);
-    function hideShow(){
-    if (menu.classList.contains('is-active')){
-      menu.classList.remove('is-active');
-    }else{
-    menu.classList.add('is-active');
-    }
-    }
-  </script>
   </html>

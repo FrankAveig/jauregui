@@ -1,0 +1,48 @@
+main{
+  font-family: 'Alegreya Sans';
+}
+main h1{
+  color: #1f9aab;
+  font-size: 4.4rem;
+  text-align: center;
+}
+main .nosotros{
+  max-width: 120rem;
+}
+main .nosotros .container_equipo{
+justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4,200px);
+}
+
+main .descripcion_personal{
+text-align: center;
+max-width: 40rem;
+margin: auto;
+}
+main .descripcion_personal h3{
+  font-size: 3rem;
+  margin: 0;
+  color: #1f9aab;
+  animation: fade-in 5s forwards;
+}
+main .descripcion_personal p{
+  font-size: 2rem;
+  animation: fade-in 5s forwards;
+  margin-bottom: 4rem;
+
+}
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+main .nosotros .container_equipo .persona figure{
+  cursor: pointer;
+}
+
+main h2{
+  text-align: center;
+  font-size: 4.8rem;
+  color: #1f9aab;
+
+}
