@@ -1,3 +1,72 @@
+#slideshow-principal{
+  position: relative;
+  overflow: hidden;
+}
+/* #progress_bar_container{
+  position: absolute;
+  height: 10px;
+  background-color: rgba(0, 0, 0, .2);
+  width: 100%;
+  top: o;
+  z-index: 1000;
+
+}
+#progress_bar{
+  height: 100%;
+  background: rgba(0, 149, 229);
+  border-radius: 0 3px 3px 0;
+  transition: width 0.8s;
+} */
+#slideshow{
+  position: relative;
+  z-index: 998;
+  height: 400px;
+}
+.hero{
+  position: relative;
+}
+ .hero img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+object-fit: cover;
+}
+.hero #img2{
+/*   left: 100%;
+ */  opacity: 0;
+}
+
+.active{
+/*   left: 0!important;
+ */  transition: all 0s;
+  opacity: 1!important;
+}
+
+#indicadores{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  z-index: 999;
+}
+.circles{
+  border: white 2px solid;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: 0 5px 0 5px;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: 0;
+}
+.resaltado{
+  background-color: rgba(31, 154, 171, 1);
+  transition: background-color .8s;
+}
+
 
 main .bienvenida{
   margin-top: 8rem 0;
@@ -20,6 +89,7 @@ main .bienvenida .texto_bienvenida h2{
 font-size: 4.9rem;
 color: #1f9aab;
 margin: 1rem 0;
+
 }
 main .bienvenida .texto_bienvenida h3{
   font-size: 3rem;
@@ -88,6 +158,52 @@ main .servicios h3{
   color: #1f9aab;
   font-size: 3rem;
 }
+
+main .carousel{
+  margin: 4rem;
+  text-align: center;
+}
+.glider-slide{
+  width: fit-content!important;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+main .carousel h2{
+  font-size: 5rem;
+  color: #1f9aab;
+}
+main .carousel .carousel_contenedor{
+  position: relative;
+  max-width: 1200px;
+  margin:auto;
+}
+main .carousel .carousel_anterior,.carousel_siguiente{
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 15%);
+  cursor: pointer;
+  font-size: 38px;
+  text-align: center;
+  background: none;
+  color: black;
+  opacity: 20%;
+  outline: none;
+}
+.carousel_anterior{
+  left: -40px;
+}
+.carousel_siguiente{
+  right: -32px;
+}
+main .carousel .carousel_contenedor h3{
+  color: #1f9aab;
+  font-size: 2.5rem;
+
+}
+
 main .pre_footer{
   background-color: #1f9aab;
 }

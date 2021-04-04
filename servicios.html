@@ -5,7 +5,7 @@
   <meta name="description" content="Consultorio Dental">
   <meta name="robots" content="index,follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/servicios.css">
   <link rel="stylesheet" href="./css/header_footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">  <title>Dental Jáuregui</title>
   <link rel="icon" type="image/png" href="./imagenes/favicon.png">
@@ -17,8 +17,7 @@
       <ul>
         <li><a href="./index.html">Inicio</a> </li> 
         <li><a href="./nosotros.html">Nosotros</a> </li> 
-        <li><a href="#servicios">Servicios</a> </li> 
-        <li><a href="./personal.html">Personal</a></li>
+        <li><a href="./servicios.html">Servicios</a> </li> 
         <li><a href="./contactanos.html">Contáctanos</a></li>
       </ul>
     </nav>
@@ -63,10 +62,132 @@
       <ul>
         <li><a href="./index.html">Inicio</a> </li> 
         <li><a href="./nosotros.html">Nosotros</a> </li> 
-        <li><a href="#servicios">Servicios</a> </li> 
-        <li><a href="./personal.html">Personal</a></li>
+        <li><a href="./servicios.html">Servicios</a> </li> 
         <li><a href="./contactanos.html">Contáctanos</a></li>
       </ul>
     </nav>
   </section>
 </header>
+
+<main>
+  <section class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="contenedor_servicios">
+
+      <div class="servicio">
+        <figure>
+          <img src="./imagenes/servicio1.png" alt="">
+        </figure>
+        <h3>Blanqueamiento</h3>
+        <button id="open_blanqueamiento">Ver más</button>
+      </div>
+      
+      <div class="servicio">
+        <figure>
+          <img src="./imagenes/servicio2.png" alt="">
+        </figure>
+        <h3>Endodoncias</h3>
+        <button id="open_endodoncia">Ver más</button>
+      </div>
+      
+      <div class="servicio">
+        <figure>
+          <img src="./imagenes/servicio3.png" alt="">
+        </figure>
+        <h3>Carillas</h3>
+        <button id="open_carillas">Ver más</button>
+      </div>
+      
+      <div class="servicio">
+        <figure>
+          <img src="./imagenes/servicio4.png" alt="">
+        </figure>
+        <h3>Prótesis Removibles</h3>
+        <button id="open_protesis">Ver más</button>
+      </div>
+    </div>
+
+      <div class="contenedor_servicios">
+  
+        <div class="servicio">
+          <figure>
+            <img src="./imagenes/servicio1.png" alt="">
+          </figure>
+          <h3>Coronas fijas de porcelana</h3>
+          <button id="open_coronas">Ver más</button>
+        </div>
+        
+        <div class="servicio">
+          <figure>
+            <img src="./imagenes/servicio2.png" alt="">
+          </figure>
+          <h3>Sellantes</h3>
+          <button id="open_sellantes">Ver más</button>
+        </div>
+        
+        <div class="servicio">
+          <figure>
+            <img src="./imagenes/servicio3.png" alt="">
+          </figure>
+          <h3>Profilaxis</h3>
+          <button id="open_profilaxis">Ver más</button>
+        </div>
+        
+        <div class="servicio">
+          <figure>
+            <img src="./imagenes/servicio4.png" alt="">
+          </figure>
+          <h3>Destartraje</h3>
+          <button id="open_destartraje">Ver más</button>
+        </div>
+      </div>
+    </section>
+  
+    <section class="modal_container" id="modal_container">
+      <div class="modal">
+        <h1 id="titulo_modal">  </h1>
+        <p id="parrafo_modal"></p>
+           <button id="close">Cerrar</button>
+      </div>
+    </section>
+</main>
+<footer>
+  <div class="container_footer">
+
+    <div>
+      <h3>Jauragui</h3>
+      <p>Dental Jáuregui está aquí para solucionar cualquier problema de salud dental que pueda tener.
+        Nuestro diverso equipo de profesionales y nuestro enfoque orientado al servicio al cliente harán que, por una vez,
+        se sienta cómodo mientras está sentado en la silla de un dentista.</p>
+      </div>
+      <div>
+        <h4>Nuestros servicios</h4>
+        <ul>
+          <li>Blanqueamiento</li>
+          <li>Endodoncias</li>
+          <li>Carillas</li>
+          <li>Prótesis Removibles</li>
+          <li>Coronas fijas en porcelana</li>
+          <li>Sellantes</li>
+          <li>Profilaxis</li>
+          <li>Destartraje</li>
+          
+        </ul>
+      </div>
+      <div class="horario_footer">
+        <h4>Horario</h4>
+        <h5>Lunes-Viernes: 9am-6pm; Sabado: 10am - 1pm</h5>
+      </div>
+      <div class="contacto_footer">
+        <h4>Contactanos</h4>
+        <h5>097 949 5931</h5>
+        <h6>info@dentaljauregui.com</h6>
+        <h6>Calle Quito esquina calle Saquisili, diagonal a la Empresa Eléctrica</h6>
+        <h6>EL EMPALME-GUAYAS-ECUADOR</h6>
+      </div>
+    </div>
+    </footer>
+  <script src="./js/menu_hamburgesa.js"></script>
+  <script src="./js/servicios.js"></script>
+  </body>
+  </html>

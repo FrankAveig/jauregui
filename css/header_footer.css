@@ -206,18 +206,6 @@ header .navegacion .menu ul a:hover{
   color:#616262;
 }
 
-.hero ul{
-  padding: 0;
-}
-.hero li{
-  height: 40rem;
-  overflow: hidden;
-}
-
-.hero ul li img{
-  width: 100%;
-
-}
 
 footer{
   margin: 0;
