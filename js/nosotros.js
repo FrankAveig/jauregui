@@ -7,7 +7,7 @@ function ocultar_nombre(){
 }
 function cambiar_nombre1 (){
   document.getElementById("nombre1").innerHTML="Dr.Daniel Jáuregui"
-  document.getElementById("texto1").innerHTML="El Director Médico de nuestra clínica, el Dr.Daniel Jáuregui,ha estado trabajando en este campo de especialización médica desde 2002. Después de fundar su propia clínica en 2010, trajo aquí toda su experiencia.  Sobre todo, le encanta verte salir con una amplia sonrisa brillante"
+  document.getElementById("texto1").innerHTML="Odontologo"
 }
 document.getElementById("boton1").onclick = function(){
 cambiar_nombre1()
@@ -24,8 +24,8 @@ ocultar_nombre()
 }
 
 function cambiar_nombre2 (){
-  document.getElementById("nombre1").innerHTML="Dra.Leslie Gross"
-  document.getElementById("texto1").innerHTML="Leslie es una de las higienistas dentales más experimentadas del condado. Trabaja en nuestra clínica dental desde el primer día. Nadie contribuyó más a la satisfacción y resolución de inquietudes de nuestros clientes que ella."
+  document.getElementById("nombre1").innerHTML="Beatriz Risco"
+  document.getElementById("texto1").innerHTML="Administradora"
 }
 document.getElementById("boton2").onclick = function(){
    cambiar_nombre2();
@@ -33,8 +33,8 @@ document.getElementById("boton2").onclick = function(){
 }
 
 function cambiar_nombre3 (){
-  document.getElementById("nombre1").innerHTML="Dra.Dana Sims"
-  document.getElementById("texto1").innerHTML="Dana se desempeñó anteriormente como enfermera práctica senior en la clínica Mayo. Obtuvo su licencia trabajando duro después de graduarse de una facultad de medicina con honores cum laude. Ella realmente representa todo el cuidado del que está rodeado nuestro consultorio dental y nuestros pacientes lo sienten todo el tiempo."
+  document.getElementById("nombre1").innerHTML="Cindy Triviño"
+  document.getElementById("texto1").innerHTML="Asistente"
 
 }
 document.getElementById("boton3").onclick = function(){
@@ -42,12 +42,32 @@ document.getElementById("boton3").onclick = function(){
   ocultar_nombre();
 }
 
+
 function cambiar_nombre4 (){
-  document.getElementById("nombre1").innerHTML="Kimberly Barker"
-  document.getElementById("texto1").innerHTML="Kimberly worked for numerous dental offices in the US and Canada during her 20 years long career. And while she will not drill your teeth personally, she will make sure that everything is running smoothly before, during and after your appointment!"
+  document.getElementById("nombre4").innerHTML="Dr.Daniel Jáuregui"
+  document.getElementById("texto4").innerHTML="Odontologo"
+}
+document.getElementById("boton4").onclick = function(){
+cambiar_nombre4()
+ocultar_nombre()
 }
 
-document.getElementById("boton4").onclick = function(){
-  cambiar_nombre4();
+function cambiar_nombre5 (){
+  document.getElementById("nombre5").innerHTML="Beatriz Risco"
+  document.getElementById("texto5").innerHTML="Administradora"
+}
+document.getElementById("boton5").onclick = function(){
+   cambiar_nombre5();
+   ocultar_nombre();
+}
+
+
+function cambiar_nombre6 (){
+  document.getElementById("nombre6").innerHTML="Cindy Triviño"
+  document.getElementById("texto6").innerHTML="Asistente"
+
+}
+document.getElementById("boton6").onclick = function(){
+  cambiar_nombre6();
   ocultar_nombre();
 }

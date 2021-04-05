@@ -97,3 +97,27 @@ main .modal_container .modal button{
   cursor: pointer;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 2);
 }
+
+@media screen and (max-width:1024px) {
+  main .servicios .contenedor_servicios{
+    grid-template-columns: repeat(3,27rem);
+  }
+}
+
+@media screen and (max-width:800px) {
+  main .servicios .contenedor_servicios{
+    grid-template-columns: repeat(2,27rem);
+  }
+}
+
+@media screen and (max-width:600px) {
+  main .modal_container .modal p{
+    font-size: 1.2rem;
+  }
+  main .servicios h2{
+    font-size: 3rem;
+  }
+  main .servicios .contenedor_servicios{
+    grid-template-columns: repeat(1,27rem);
+  }
+}

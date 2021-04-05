@@ -6,13 +6,15 @@ main h1{
   font-size: 4.4rem;
   text-align: center;
 }
-main .nosotros{
-  max-width: 120rem;
+
+main .nosotros2,#dale_click2{
+  display: none;
 }
 main .nosotros .container_equipo{
 justify-content: center;
   display: grid;
-  grid-template-columns: repeat(4,200px);
+  grid-template-columns: repeat(3,200px);
+  padding-right: 10%;
 }
 
 main .descripcion_personal{
@@ -25,11 +27,13 @@ main .descripcion_personal h3{
   margin: 0;
   color: #1f9aab;
   animation: fade-in 5s forwards;
+ 
+
 }
-main .descripcion_personal p{
+#texto1{
+  margin-bottom: 4rem;
   font-size: 2rem;
   animation: fade-in 5s forwards;
-  margin-bottom: 4rem;
 
 }
 @keyframes fade-in {
@@ -45,4 +49,77 @@ main h2{
   font-size: 4.8rem;
   color: #1f9aab;
 
+}
+
+@media screen and (max-width:933px){
+
+  main .nosotros .container_equipo{
+  padding-right: 12%;
+}
+}
+
+@media screen and (max-width:800px){
+  main .nosotros .container_equipo{
+    padding-right: 20%;
+  }
+  }
+
+@media screen and (max-width:500px){
+
+  main .nosotros .container_equipo{
+    padding-right: 0;
+  }
+.nosotros{
+  display: none;
+}
+#dale_click{
+  display: none;
+}
+.nosotros2{
+  display: flex!important;
+}
+#dale_click2{
+  display: block;
+  text-align: center;
+}
+.nosotros2 h3,h4{
+  font-size: 2rem!important;
+  margin: 0;
+  color: #1f9aab!important;
+ font-style: normal!important;
+ text-align: center;
+}
+.nosotros2 h4{
+  font-weight: 400;
+margin-bottom: 3rem;
+}
+main .nosotros .container_equipo{
+  grid-template-columns: 1fr;
+  margin: auto;
+}
+main h1{
+  font-size: 3rem;
+}
+main h2{
+  font-size: 2rem;
+}
+}
+
+@media screen and (max-width:320px){
+  main .nosotros2 .container_equipo{
+    grid-template-columns: 320px;
+
+  }
+  main .nosotros2 .container_equipo .persona{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  main .nosotros2 .container_equipo .persona .img{
+    margin: 0;
+    display: flex;
+    
+  }
 }

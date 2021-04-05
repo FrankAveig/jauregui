@@ -1,4 +1,4 @@
-  const imagenes = ['../imagenes/hero.png','../imagenes/servicio1.jpg','../imagenes/servicio2.png'];
+  const imagenes = ['../imagenes/hero3.png','../imagenes/hero.png','../imagenes/hero2.png'];
 
   let i=1;
   const img1 = document.querySelector('#img1');

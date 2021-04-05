@@ -63,3 +63,21 @@ iframe{
   grid-column-start: 2;
   grid-row-start: 1;
 }
+
+@media screen and (max-width:1024px){
+
+  .formulario{
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width:950px){
+
+  .formulario{
+    
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+    }
+  }
