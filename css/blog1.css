@@ -1,0 +1,88 @@
+
+html{
+  font-family:'Alegreya Sans' ;
+
+}
+main .informacion{
+  max-width: 1200px;
+  margin: auto;
+}
+
+main .informacion h2{
+  margin-top: 5rem!important;
+  margin: 0;
+  font-size: 3rem;
+  color: #1f9aab;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+}
+main .informacion p{
+  margin: 0  0 0 5rem;
+  font-size: 2rem;
+  text-align: justify;
+  
+}
+
+main .informacion__articulo{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 4rem;
+  
+}
+main .informacion__articulo-2,.informacion__articulo-3{
+  flex-direction: unset;
+  margin-top: 1rem;
+}
+main .informacion__articulo-2 p{
+  margin: 0 5rem 0 0;
+}
+main .informacion__articulo-final p{
+  margin: 0;
+}
+main .informacion figure{
+  margin: 0;
+}
+main .informacion .image1 img{
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width:1024px){
+
+  .articulo{
+
+    width: 90%;
+    margin: auto;
+  }
+  main .informacion p{
+    font-size: 1.7rem;
+  }
+  .image1{
+    height: auto!important;
+   }
+}
+@media screen and (max-width:814px) {
+
+  main .informacion p{
+    font-size: 1.45rem;
+  }
+ 
+  
+}
+@media screen and (max-width:768px) {
+  
+  .articulo{
+
+    width: 80%;
+  }
+  .articulo figure{
+    display: none;
+  }
+  main .informacion .articulo p{
+    margin: 0;
+  }
+  .image1{
+    height: 163px;
+   }
+}
+

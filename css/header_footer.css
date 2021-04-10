@@ -158,23 +158,27 @@ header .containerHeader2{
   justify-content: space-between;
 }
 
-header .containerHeader2 .horarios{
+ .containerHeader2 .horarios{
   display: flex;
   align-items: center;
 }
-header .containerHeader2 .horarios div h3:nth-child(1){
+.containerHeader2 .horarios-secundario{
+  display: none;
+}
+ .containerHeader2 .horarios div h3:nth-child(1){
   font-size: 2rem;
   margin-bottom: 0;
   margin-top: 1px
 }
-header .containerHeader2 .horarios div h3:nth-child(2), h3:nth-child(3){
+ .containerHeader2 .horarios div h3:nth-child(2), h3:nth-child(3){
   font-size: 2rem;
   color: #949494;
+  -webkit-text-fill-color: #949494;
   font-weight: 400;
   font-style: italic;
   margin: 0;
 }
-header .containerHeader2 .horarios h3{
+ .containerHeader2 .horarios h3{
   margin-right: 2rem;
 
 }
@@ -216,6 +220,11 @@ header .navegacion .menu ul a{
 header .navegacion .menu ul a:hover{
   color:#616262;
 }
+
+.containerHeader2 .logo2{
+  display: none;
+}
+
 
 
 footer{
@@ -280,7 +289,7 @@ footer .contacto_footer h4{
   width: 4rem;
    height: 4rem;
    border-radius: 0;
-   background :  rgb(31, 154, 171);
+   background :  #1f9aab;
    line-height: 4rem;
    text-align: center;
    position: fixed;
@@ -289,6 +298,13 @@ footer .contacto_footer h4{
    font-size: 1.6rem;
    margin: 0.3rem 0 0 0.3rem;
    z-index: 333333;
+ }
+ 
+
+ @media screen and (max-width: 1270px){
+  #slideshow{
+    height: 304px;
+  }
  }
 
 
@@ -301,8 +317,18 @@ header .containerHeader2{
   height: 304px;
 }
 }
+@media screen and (max-width: 930px){
+  #slideshow{
+    height: 276px;
+  }
+ }
+ @media screen and (max-width: 850px){
+  #slideshow{
+    height: 252px;
+  }
+ }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:814px){
 
 #slideshow{
   height: 228px;
@@ -341,7 +367,13 @@ footer .container_footer{
     height: 12px;
     width: 10px;
   }
+
+  header .containerHeader2 .horarios div h3{
+    font-size: 1.4rem!important;
+  }
 }
+
+
 @media screen and (max-width:500px){
 
   #slideshow{
@@ -404,12 +436,24 @@ footer .container_footer{
     margin: 1.5rem 0;
   }
 
-  header .containerHeader2 .horarios{
+   .containerHeader2 .horarios{
     margin: 1.5rem 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
+    
   }
+  .containerHeader2 .horarios-secundario{
+    display: flex;
+  }
+  .containerHeader2 .horarios-secundario h3{
+    margin-right: 0;
+  }
+  .containerHeader2 .horarios div h3:nth-child(2), h3:nth-child(3){
+    font-size: 1.6rem;
+   
+  }
+
   header .containerHeader2 .horarios h3{
     margin: 0;
   }
@@ -426,3 +470,14 @@ footer .container_footer{
 
 
 }
+@media screen and (max-width:375px){
+
+  #slideshow{
+    height: 111px;
+  }
+}
+@media screen and (max-width: 322px){
+  #slideshow{
+    height: 95px;
+  }
+ }

@@ -5,13 +5,31 @@ const figure1 = document.querySelector('.img');
 function ocultar_nombre(){
   document.getElementById("dale_click").innerHTML="";
 }
+
+function ocultar_nombre1(){
+  document.getElementById("nombre1").innerHTML="";
+  document.getElementById("texto1").innerHTML="";
+}
+
+function ocultar_nombre2(){
+  document.getElementById("nombre2").innerHTML="";
+  document.getElementById("texto2").innerHTML="";
+}
+
+function ocultar_nombre3(){
+  document.getElementById("nombre3").innerHTML="";
+  document.getElementById("texto3").innerHTML="";
+}
+
+
 function cambiar_nombre1 (){
   document.getElementById("nombre1").innerHTML="Dr.Daniel Jáuregui"
   document.getElementById("texto1").innerHTML="Odontologo"
 }
 document.getElementById("boton1").onclick = function(){
-cambiar_nombre1()
-ocultar_nombre()
+cambiar_nombre1();
+ocultar_nombre();
+
 
 /*   if (figure1.classList.contains('is-active')){
     figure1.classList.remove('is-active');
@@ -24,22 +42,24 @@ ocultar_nombre()
 }
 
 function cambiar_nombre2 (){
-  document.getElementById("nombre1").innerHTML="Beatriz Risco"
-  document.getElementById("texto1").innerHTML="Administradora"
+  document.getElementById("nombre2").innerHTML="Beatriz Risco"
+  document.getElementById("texto2").innerHTML="Administradora"
 }
 document.getElementById("boton2").onclick = function(){
    cambiar_nombre2();
    ocultar_nombre();
+
 }
 
 function cambiar_nombre3 (){
-  document.getElementById("nombre1").innerHTML="Cindy Triviño"
-  document.getElementById("texto1").innerHTML="Asistente"
+  document.getElementById("nombre3").innerHTML="Cindy Triviño"
+  document.getElementById("texto3").innerHTML="Asistente"
 
 }
 document.getElementById("boton3").onclick = function(){
   cambiar_nombre3();
   ocultar_nombre();
+  
 }
 
 

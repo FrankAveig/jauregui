@@ -63,7 +63,7 @@ object-fit: cover;
   outline: 0;
 }
 .resaltado{
-  background-color: rgba(31, 154, 171, 1);
+  background-color: #1f9aab;
   transition: background-color .8s;
 }
 
@@ -245,6 +245,9 @@ main .contenedor_pre_footer button{
   font-weight: bolder;
   margin-left: 5rem;
 }
+
+
+
 @media screen and (max-width:1285px){
 main .bienvenida{
   grid-template-columns: 92rem;
@@ -281,10 +284,14 @@ main .text_pre_footer h4{
     display: block ;
   }
 }
+
+
+
 @media screen and (max-width:500px){
   main .bienvenida{
     grid-template-columns: 31rem;
     gap: 2.5rem;
+    margin-top: 3rem;
   }
   main .bienvenida figure{
     width: 100%;
@@ -299,6 +306,7 @@ main .text_pre_footer h4{
   }
   main .bienvenida .texto_bienvenida p{
     font-size: 1.6rem;
+    word-spacing: -1px;
   }
   main .ventajas h2{
     font-size: 3em;
@@ -329,9 +337,10 @@ main .text_pre_footer h4{
     margin-left: 0;
     margin-bottom: 4rem;
     font-size: 1.8rem;
+    
   }
-  
 
+  
 
 }
 
