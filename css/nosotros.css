@@ -89,6 +89,9 @@ main h2{
   main h2{
     font-size: 2rem;
 }
+  footer h4{
+    color: white!important;
+  }
 }
 
 

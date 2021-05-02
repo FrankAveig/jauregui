@@ -20,6 +20,9 @@ main .entradas{
 .entradas__entrada figure{
   margin: 0.7rem 3rem 0 0;
 }
+.entradas__entrada figure img{
+  border-radius: 20px;
+}
 .entradas__entrada h2{
   margin: 0;
   font-size: 3rem;

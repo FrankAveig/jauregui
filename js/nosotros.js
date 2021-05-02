@@ -24,7 +24,7 @@ function ocultar_nombre3(){
 
 function cambiar_nombre1 (){
   document.getElementById("nombre1").innerHTML="Dr.Daniel Jáuregui"
-  document.getElementById("texto1").innerHTML="Odontologo"
+  document.getElementById("texto1").innerHTML="Odontólogo"
 }
 document.getElementById("boton1").onclick = function(){
 cambiar_nombre1();

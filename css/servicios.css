@@ -120,4 +120,7 @@ main .modal_container .modal button{
   main .servicios .contenedor_servicios{
     grid-template-columns: repeat(1,27rem);
   }
+  #titulo_modal {
+    font-size: 3rem;
+  }
 }

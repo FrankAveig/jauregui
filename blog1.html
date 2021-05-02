@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <meta http-equiv="Expires" content="0">
+ 
+<meta http-equiv="Last-Modified" content="0">
+ 
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+ 
+<meta http-equiv="Pragma" content="no-cache">
   <meta charset="UTF-8">
   <meta name="description" content="Consultorio Dental">
   <meta name="robots" content="index,follow">
@@ -29,13 +36,13 @@
   <section class="containerHeader1">
     <section class="contactosHeader">
       <ul>
-        <li><a href=""><i class="icon-facebook"></i></a></li>
-        <li><a href=""><i class="icon-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/consultoriodentaljauregui" target="_blank"><i class="icon-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/dentaljauregui?r=nametag" target="_blank"><i class="icon-instagram"></i></a></li>
         <li><a href=""><i class="icon-telegram"></i></a></li>
       </ul>
         <div class="cita">
           <h3>Realiza una cita ahora</h3>
-          <a href=""><h3>Hacer una cita</h3></a>
+          <a target="_blanck" href="https://api.whatsapp.com/send?phone=593979495931&amp;text=Hola!&nbsp;necesito&nbsp;información&nbsp;"><h3>Hacer una cita</h3></a>
         </div>
       </div>
     </section>
@@ -131,17 +138,22 @@
         
       </p>
       <figure>
-        <img src="./imagenes/blog1/imagen3.png" alt="">
+        <img src="./imagenes/blog1/imagen4.png" alt="">
       </figure>
       
     </div>
     
     <div class="informacion__articulo informacion__articulo-2">
-      
+
+      <figure>
+        <img src="./imagenes/blog1/imagen3.png" alt="">
+      </figure>
+
       <p>El odontólogo está más expuesto al virus, ya que al atender a un paciente, la distancia de trabajo en
         la cavidad oral del paciente suele situarse a unos 20 a 35 centímetros aproximadamente. Sin embargo, y sorprendiendo a 
         extraños, pero no a la propia profesión, el contagio entre odontólogos y en consultorios dentales, ha sido inapreciable. 
-         Los consultorios dentales han demostrado ser una vez más un lugar más seguro en la prevención de la infección cruzada del virus.<br><br>
+         Los consultorios dentales han demostrado ser una vez más un lugar más seguro en la prevención de la infección cruzada del virus.
+         <br><br>
          Ésta evidencia puede sorprender a la población, pues se ha entendido que la principal vía de contagio del virus es por la boca. 
          El odontólogo se protege con máscaras  (FPP2) en su mayoría, y se da e indica al paciente que se realice un enjuague, que puede ser 
          con Cloruro de Cetilpiridinio (CPC) al 0,05%, (compuesto de amonio cuaternario
@@ -149,6 +161,7 @@
          durante un minuto antes de cualquier exploración o intervención. Éstos reducen la carga viral, logrando  así reducir mucho el contagio por
          saliva o aerosoles. 
       </p>
+
       <figure>
         <img src="./imagenes/blog1/imagen3.png" alt="">
       </figure>
@@ -171,14 +184,49 @@
   
 </section>
 </main>
+<a class="app-whatsapp" id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=593979495931&amp;text=Hola!&nbsp;necesito&nbsp;información&nbsp;" style="	position: fixed;
+right: 24px;
+bottom: 25px;
+width: 60px;
+z-index: 444444;
+display: block;
+bottom: 95px;
+">
+  <img src="./imagenes/whatsapp.png" alt="" style="width: 65px;">
+</a>
+
+<!-- Messenger plugin de chat Code -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v10.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your plugin de chat code -->
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="103781261818951">
+</div>
 <footer>
   <div class="container_footer">
-    
+
     <div>
-      <h3>Jauragui</h3>
+      <h3>Dental Jáuregui</h3>
       <p>Dental Jáuregui está aquí para solucionar cualquier problema de salud dental que pueda tener.
-        Nuestro diverso equipo de profesionales y nuestro enfoque orientado al servicio al cliente harán que, por una vez,
-        se sienta cómodo mientras está sentado en la silla de un dentista.</p>
+        Nuestro equipo de profesionales y nuestro enfoque orientado al servicio al paciente harán que, por una vez,
+        se sienta cómodo mientras está sentado en la silla de un odontologo.</p>
       </div>
       <div>
         <h4>Nuestros servicios</h4>
@@ -196,16 +244,19 @@
       </div>
       <div class="horario_footer">
         <h4>Horario</h4>
-        <h5>Lunes-Viernes: 9am-6pm; Sabado: 10am - 1pm</h5>
+        <h5>Lunes-Viernes: 9:00am-12:30pm <br> 2:30pm - 6:00pm</h5>
+        <h5>Sábado: 9:00 am - 2:00pm</h5>
+
       </div>
       <div class="contacto_footer">
-        <h4>Contactanos</h4>
+        <h4>Contáctanos</h4>
         <h5>097 949 5931</h5>
         <h6>info@dentaljauregui.com</h6>
         <h6>Calle Quito esquina calle Saquisili, diagonal a la Empresa Eléctrica</h6>
         <h6>EL EMPALME-GUAYAS-ECUADOR</h6>
       </div>
     </div>
+  </div>
     </footer>
     <script type="text/javascript" src="./js/nosotros.js"></script>
     <script src="./js/menu_hamburgesa.js"></script>
