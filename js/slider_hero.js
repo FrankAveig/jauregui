@@ -1,6 +1,6 @@
+  var i=1;
   const imagenes = ['../imagenes/hero3.png','../imagenes/hero.png','../imagenes/hero2.png'];
-
-  let i=1;
+  const close = document.getElementById('close')
   const img1 = document.querySelector('#img1');
   const img2 = document.querySelector('#img2');
   const progressBar = document.querySelector('#progress_bar');
@@ -67,5 +67,7 @@
     },1000)
   }
   setInterval(slideshow,4000)
- 
- 
+
+  close.addEventListener('click' , ()=> {
+    modal_container.classList.remove('show');
+  });

@@ -1,6 +1,8 @@
 const titulo = document.getElementById("titulo_modal");
 const parrafo = document.getElementById("parrafo_modal");
 const close = document.getElementById('close')
+const buttonMas = document.getElementById('button-mas')
+const imagen = document.getElementById('imagen')
 const tblanquemiento = "Blanqueamiento";
 const pblanquemiento = `El blanqueamiento dental es un tratamiento de tipo odontológica estético y tiene como objetivo eliminar manchas de los dientes y que los mismos se vean más blancos y brillantes. Actualmente este es uno de los procedimientos estéticos más solicitados.<br><br> Nuestro equipo esta altamente capacitado y tiene amplia experiencia realizando este tipo de procedimientos, es importante seguir un protocolo adecuado de diagnóstico, planificación del procedimiento y el mantenimiento de los resultados, por ello es vital siempre seguir las recomendaciones del odontólogo y visitarle regularmente.<br><br>Este es un procedimiento que debe ser realizado únicamente por odontólogos certificados, confía en Dental Jáuregui para obtener la sonrisa saludable y brillante que deseas.</br>`;
 const tendodoncia = "Endodoncia";
@@ -17,16 +19,21 @@ const tprofilaxis= `Profilaxis`;
 const pprofilaxis= `En ododontología, profilaxis son aquellas acciones destinadas a prevenir ciertas afecciones dentobucales. Entre dichas afecciones, las más frecuentes son las caries, que afectan a los dientes, y la gingivitis y periodontitis, que afectan a las encías.<br><br>Aunque nos encontremos bien y pensemos que no tenemos signos ni síntomas de estas afecciones, es perfectamente posible que SÍ tengamos alguno de estos problemas<br><br>Es recomendable visitar al odontólogo cada 10 meses`;
 const tdestartraje= `Destartraje`
 const pdestartraje= `Se conoce por este nombre a una técnica que se emplea para la prevención de posibles problemas dentales.<br><br> Consiste en eliminar la placa dental y el sarro que puede acumularse en la superficie del diente. Su actuación se centra en la zona gingival o, lo que es lo mismo, bajo la línea de las encías.<br><br> Es un espacio al que es casi imposible acceder si no es empleando la tecnología profesional adecuada.`;
-
+const tcirugia = "Cirugia Oral y maxilofacial";
+const pcirugia = `El blanqueamiento dental es un tratamiento de tipo odontológica estético y tiene como objetivo eliminar manchas de los dientes y que los mismos se vean más blancos y brillantes. Actualmente este es uno de los procedimientos estéticos más solicitados.<br><br> Nuestro equipo esta altamente capacitado y tiene amplia experiencia realizando este tipo de procedimientos, es importante seguir un protocolo adecuado de diagnóstico, planificación del procedimiento y el mantenimiento de los resultados, por ello es vital siempre seguir las recomendaciones del odontólogo y visitarle regularmente.<br><br>Este es un procedimiento que debe ser realizado únicamente por odontólogos certificados, confía en Dental Jáuregui para obtener la sonrisa saludable y brillante que deseas.</br>`;
 
 close.addEventListener('click' , ()=> {
   modal_container.classList.remove('show');
+  buttonMas.innerHTML =''
 });
 
 function cambiar_modal(t, p){
   this.t = titulo.innerHTML=t;
   this.p = parrafo.innerHTML=p;
   modal_container.classList.add("show")
+  buttonMas.classList.remove('ashow') ;
+  imagen.removeAttribute('src')
+
 }
 
 
@@ -60,5 +67,12 @@ document.getElementById('open_profilaxis').onclick=function(){
 
 document.getElementById('open_destartraje').onclick=function(){
   cambiar_modal(tdestartraje,pdestartraje);
+}
+
+document.getElementById('open_cirugia').onclick=function(){
+  cambiar_modal(tcirugia,'');
+  imagen.setAttribute('src','./imagenes/servicio9.png')
+  buttonMas.innerHTML ='Conoce Más'
+  buttonMas.classList.add('ashow') ;
 }
 

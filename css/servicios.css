@@ -97,6 +97,35 @@ main .modal_container .modal button{
   cursor: pointer;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 2);
 }
+main .modal_container .modal .ashow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 12rem;
+  height: 3rem;
+  background-color:#1f9aab;
+  border: none;
+  font-size: 1.4rem;
+  color:white ;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+  margin-left: .5rem;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 2);
+}
+.container_button{
+  display: flex ;
+  justify-content: center;
+  margin-top: 3rem;
+}
+main .modal-body{
+  margin: auto;
+  width: 70%;
+}
+main .modal_container .modal img{
+  width: 100%;
+}
 
 @media screen and (max-width:1024px) {
   main .servicios .contenedor_servicios{
